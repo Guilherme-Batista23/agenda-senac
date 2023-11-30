@@ -1,0 +1,23 @@
+h1{
+    color:red;
+    font-size: 80px;
+    font-family: monospace;
+    text-align: center;
+}
+
+li {
+    font-size: 200px;
+    list-style-type: none;
+    text-align: right;
+    top: 500px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+ 
+a:hover {
+    color: brown;
+}

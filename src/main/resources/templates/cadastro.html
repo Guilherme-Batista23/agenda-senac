@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2.css">
+    <title>Add</title>
+</head>
+<body class="background">
+    <h1>Adicionar</h1>
+    
+    <div>
+        <form action="#" th:action="@{Registro}" th:object="${registro}" method="post">
+            
+            <label class="lbl" for="nome">Nome</label>
+            <input th:field="*{nome}" class="caixatexto" id="nome" placeholder="Nome Completo" type="text">
+
+            <label class="lbl" for="email">Email</label>
+            <input th:field="*{email}" class="caixatexto" id="email" placeholder="Email" type="email">
+
+            <label class="lbl" for="telefone">Telefone</label> 
+            <input th:field="*{telefone}" class="caixatexto" id="telefone" placeholder="Telefone" type="number">
+
+            <input type="submit" class="primary_button">
+            
+        </form>
+    </div>
+</body>
+</html>
